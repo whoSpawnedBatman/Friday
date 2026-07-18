@@ -17,10 +17,10 @@ from api.v1.router import api_router
 async def lifespan(app: FastAPI):
     """Application startup and shutdown events."""
     # Startup
-    print(f"🚀 {settings.app_name} starting in {settings.app_env} mode")
+    print(f"[START] {settings.app_name} starting in {settings.app_env} mode")
     yield
     # Shutdown
-    print(f"👋 {settings.app_name} shutting down")
+    print(f"[STOP] {settings.app_name} shutting down")
 
 
 app = FastAPI(
