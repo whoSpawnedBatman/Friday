@@ -1,5 +1,6 @@
 # Logs
 *.log
+*.exe
 npm-debug.log*
 
 # Dependencies
